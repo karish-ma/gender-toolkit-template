@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender Mainstreaming in Practice — Interactive Learning</title>
+  <meta name="description" content="6 interactive scenarios on gender mainstreaming in TVET — developed from independent gender mainstreaming consulting work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─── Nav ───────────────────────────────────────────────── -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        Gender Mainstreaming <span>in Practice</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#activities" style="display:inline-block;padding:0.45rem 1rem;background:var(--ink);color:var(--surface);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:600;text-decoration:none">Explore →</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── Shared Results Banner (shown when visiting via ?r= link) ── -->
+  <div id="sharedResultsBanner" class="shared-banner hidden"></div>
+
+  <!-- ─── Certificate (hidden until complete) ───────────────── -->
+  <div class="container" id="certContainer">
+    <div class="certificate" id="certificate">
+      <h2 class="cert-heading">Congratulations!</h2>
+      <p class="cert-body">
+        Now you're familiar with PGN vs SGI, structural privilege, Gender-Responsive Pedagogy,
+        Forum Theater, the Longwe Framework, and resistance strategies.
+      </p>
+      <p class="cert-body mt-2">
+        We hope you continue the good work and take gender mainstreaming forward.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── Activity Hub ───────────────────────────────────────── -->
+  <main id="activities">
+    <section class="games-section">
+      <div class="container">
+        <div class="games-masthead">
+          <div>
+            <h1 class="games-masthead-title">Gender Mainstreaming in Practice</h1>
+            <p class="games-masthead-desc">Six interactive activities for trainers. All scenarios drawn from TVET contexts. 2–3 min each.</p>
+          </div>
+          <div class="progress-inline">
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+            </div>
+            <span class="progress-count" id="progressCount">0 / 6</span>
+            <button id="shareResultsBtn" class="btn btn-outline" style="font-size:0.78rem;padding:0.35rem 0.75rem;white-space:nowrap">Share</button>
+          </div>
+        </div>
+
+        <div class="games-grid">
+
+          <!-- Game 1 -->
+          <a href="games/pgn-sgi.html" class="game-card" data-game="pgn-sgi">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 1</div>
+              <div class="card-title">Sort the Cards</div>
+              <div class="card-concept">Practical vs Strategic Needs</div>
+              <div class="card-desc">
+                Drag 6 TVET scenarios into two columns: Practical Gender Needs or Strategic Gender Interests.
+                The distinction matters: it's the difference between removing barriers and changing the system.
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~2 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game 2 -->
+          <a href="games/power-walk.html" class="game-card" data-game="power-walk">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 2</div>
+              <div class="card-title">Power Walk</div>
+              <div class="card-concept">Structural Privilege and Barriers</div>
+              <div class="card-desc">
+                Choose from 5 characters, including a transgender trainee, each at a
+                different position in the same institution. For each statement, step
+                forward or back. Watch the gaps widen.
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~3 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game 3 -->
+          <a href="games/grp-match.html" class="game-card" data-game="grp-match">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 3</div>
+              <div class="card-title">Match the Principle</div>
+              <div class="card-concept">Gender-Responsive Pedagogy (GRP)</div>
+              <div class="card-desc">
+                14 classroom scenarios. 6 GRP principles. Drag each one to where it fits.
+                Some distinctions are less obvious than they look.
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~3 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game 4 -->
+          <a href="games/forum-theater.html" class="game-card" data-game="forum-theater">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 4</div>
+              <div class="card-title">Forum Theater</div>
+              <div class="card-concept">Gender-based Exclusion and Allyship</div>
+              <div class="card-desc">
+                5 short vignettes: gender bias, idea dismissal, unfair assessment,
+                transgender exclusion. Pick your response. See what happens next.
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~3 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game 5 -->
+          <a href="games/longwe.html" class="game-card" data-game="longwe">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 5</div>
+              <div class="card-title">Climb the Ladder</div>
+              <div class="card-concept">Longwe's Empowerment Framework</div>
+              <div class="card-desc">
+                5 TVET interventions. 5 levels on Longwe's empowerment ladder, from
+                Welfare to Control. Most programmes sit at the bottom two. Can you tell why?
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~2 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game 6 -->
+          <a href="games/resistance.html" class="game-card" data-game="resistance">
+            <div class="card-accent"></div>
+            <div class="card-body">
+              <div class="card-number">Activity 6</div>
+              <div class="card-title">Hold the Room</div>
+              <div class="card-concept">Resistance Strategies</div>
+              <div class="card-desc">
+                Three types of resistance, three scenarios. A participant pushes back
+                in your workshop. What do you do?
+              </div>
+              <div class="card-footer">
+                <span class="card-time">~3 min</span>
+                <span class="card-cta">Start →</span>
+              </div>
+            </div>
+          </a>
+
+        </div><!-- /games-grid -->
+      </div>
+    </section>
+
+    <!-- ─── Key Concepts ───────────────────────────────────────── -->
+    <section id="concepts" class="concepts-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Concepts: Reference Guide</h2>
+          <p>The frameworks used across all six activities. Click each to expand.</p>
+        </div>
+
+        <div class="accordion" id="conceptsAccordion">
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Gender Mainstreaming
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Foundation</div>
+                <p>Gender mainstreaming means building gender perspectives into the design, implementation, monitoring, and evaluation of policies, programmes, and projects, so that all people benefit equally and inequality isn't just reproduced.</p>
+                <p>It's not the same as a "women's programme." Mainstreaming means changing the mainstream itself: the systems, assumptions, and structures that produce unequal outcomes. Not adding targeted components alongside existing work.</p>
+                <p><strong>In TVET contexts,</strong> this means examining who participates in training, how trainers teach, what curriculum assumes, and who holds institutional power, then actively working to shift each of these. It includes women, men, transgender, non-binary, and gender non-conforming people, recognising that gender norms constrain everyone, though not equally.</p>
+                <p><strong>In South Asian contexts,</strong> this means recognising hijra and other transgender identities that predate colonial gender binaries, and addressing the legal, social, and institutional barriers that transgender people face in TVET.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Practical Gender Needs (PGN) vs Strategic Gender Interests (SGI)
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Moser Framework</div>
+                <p>Caroline Moser's distinction, developed to help planners tell apart:</p>
+                <ul>
+                  <li><strong>Practical Gender Needs (PGN):</strong> immediate, material needs that come from existing gender roles, like safe sanitation, transport subsidies, or childcare. Addressing PGNs makes participation possible within the current system.</li>
+                  <li><strong>Strategic Gender Interests (SGI):</strong> the deeper structural issues whose resolution would actually transform gender relations. Discriminatory laws, unequal power, harmful norms.</li>
+                </ul>
+                <p>Both matter. PGNs make access possible now; SGIs make inequality structurally impossible in the long run. Good gender mainstreaming does both.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Gender-Responsive Pedagogy (GRP)
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Teaching Framework</div>
+                <p>Gender-Responsive Pedagogy is a teaching approach that takes seriously how gender shapes who participates, who gets heard, what content is relevant, and what "safe" actually means for different learners.</p>
+                <p>The six GRP principles used in this programme are:</p>
+                <ul>
+                  <li><strong>Inclusivity:</strong> all learners are welcomed; practical barriers (language, timing, space) are removed.</li>
+                  <li><strong>Participation:</strong> women and marginalised groups actively shape decisions, not just attend.</li>
+                  <li><strong>Relevance:</strong> content responds to learners' real conditions, including gendered constraints.</li>
+                  <li><strong>Power and Privilege:</strong> unequal dynamics are named and actively worked to shift.</li>
+                  <li><strong>Safe Space:</strong> an environment where everyone can speak, question, and challenge without fear.</li>
+                  <li><strong>Transformative Aim:</strong> the programme works towards changing attitudes, norms, and systems, not just raising awareness.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Longwe's Women's Empowerment Framework
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Analytical Framework</div>
+                <p>Sara Hlupekile Longwe's framework is a five-level ladder for assessing how deeply an intervention addresses gender inequality:</p>
+                <ul>
+                  <li><strong>Level 1 — Welfare:</strong> meeting women's basic material needs (food, income, transport). Does not address causes.</li>
+                  <li><strong>Level 2 — Access:</strong> equalising access to resources (education, credit, training) on equal terms with men.</li>
+                  <li><strong>Level 3 — Conscientisation:</strong> building awareness that gender disadvantage is socially constructed, not natural.</li>
+                  <li><strong>Level 4 — Participation:</strong> women actively influencing decisions, in institutions and policy, on equal terms.</li>
+                  <li><strong>Level 5 — Control:</strong> equal control over resources and benefits; a balance of power achieved through sustained empowerment.</li>
+                </ul>
+                <p>Most donor-funded TVET programmes sit at Levels 1 and 2. The framework helps practitioners ask: what would a Level 4 or 5 intervention actually look like here?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Forum Theater
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Methodology</div>
+                <p>Forum Theater is a participatory method developed by Augusto Boal as part of his Theatre of the Oppressed. In the original form, an actor plays a scene of oppression or injustice, and audience members can stop the performance and suggest, or physically try, different interventions.</p>
+                <p>In training contexts it works as a decision-making tool: participants read a scenario showing a real pattern of exclusion or bias, choose a response, and see the consequence.</p>
+                <p>It works because it makes the abstract concrete. Instead of discussing what a facilitator should do about bias, participants make an actual choice and live with the result.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Types of Resistance to Gender Mainstreaming
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel" style="max-height:0">
+              <div class="accordion-panel-inner">
+                <div class="concept-label">Facilitation Framework</div>
+                <p>Gender mainstreaming facilitators run into resistance. It usually falls into three types:</p>
+                <ul>
+                  <li><strong>Ideological resistance:</strong> opposition rooted in cultural, religious, or political beliefs. The argument that gender equality is a "Western import" or contradicts local values. Data won't help; shared values might.</li>
+                  <li><strong>Protectionist resistance:</strong> often from women who made it without targeted support and see structural barriers as overstated. You can't dismiss their experience; you need to widen the frame.</li>
+                  <li><strong>Fatalist resistance:</strong> they agree with the goals but don't believe change is possible. "The system will never shift." The response is to find what's within reach, what can change without anyone's permission.</li>
+                </ul>
+                <p>Knowing which type you're dealing with changes how you respond, and helps you avoid making it worse.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /accordion -->
+      </div>
+    </section>
+
+    <!-- ─── Reflection ─────────────────────────────────────────── -->
+    <section class="reflect-section">
+      <div class="reflect-inner">
+        <h2>Take a Moment</h2>
+        <p>These questions don't have right answers. They're designed to connect the concepts to your own context.</p>
+        <ul class="reflect-prompts">
+          <li>Which activity challenged an assumption you held before starting?</li>
+          <li>Where in your own institution do you see the dynamics described here playing out?</li>
+          <li>What is one thing you could change next week, without waiting for anyone's permission?</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── About ─────────────────────────────────────────────── -->
+    <section id="about" style="padding:3rem 0;background:var(--sand)">
+      <div class="container-narrow">
+        <h2 style="color:var(--teal-dark);margin-bottom:1rem">About this project</h2>
+        <p>
+          I worked as an independent gender mainstreaming specialist designing and facilitating
+          Training of Trainers programmes for TVET systems. The activities here come directly
+          from the scenario-based materials I built for those programmes.
+        </p>
+        <p>
+          They start with foundational concepts (PGN vs SGI, Longwe's empowerment framework)
+          and move into facilitation practice: Gender-Responsive Pedagogy, Forum Theater, and
+          handling resistance in the room. That covers most of what trainers in this space
+          actually need to know and do.
+        </p>
+        <div class="divider"></div>
+        <div style="font-size:0.85rem">
+          <button id="resetProgress" class="btn btn-outline" style="font-size:0.8rem;padding:0.4rem 0.8rem">
+            Reset progress
+          </button>
+        </div>
+        <div class="support-row">
+          <p class="support-text">If this resource was useful, you're welcome to send a note or a coffee.</p>
+          <a href="https://ko-fi.com/" class="btn-coffee" target="_blank" rel="noopener">Buy me a coffee</a>
+          <button class="btn-share" id="shareBtn">Share this</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <strong>Gender Mainstreaming in Practice</strong> · Based on independent gender mainstreaming consulting work in TVET
+      </p>
+      <p style="margin-top:0.4rem">
+        No tracking · No cookies · Progress stored locally in your browser
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

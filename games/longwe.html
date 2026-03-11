@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climb the Ladder: Longwe Level Analyzer — Gender Mainstreaming in Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo nav-back">← Back to Hub</a>
+      <span style="color:rgba(255,255,255,0.5);font-size:0.9rem">Game 5 of 6</span>
+    </div>
+  </nav>
+
+  <header class="game-header">
+    <div class="container">
+      <div class="game-header-inner">
+        <div class="game-number-badge">Activity 5 · Longwe Framework</div>
+        <div class="game-title-group">
+          <h1>Climb the Ladder</h1>
+          <p class="game-instructions">
+            5 TVET interventions. Longwe's 5-level empowerment ladder runs from
+            <strong>Welfare</strong> (Level 1) to <strong>Control</strong> (Level 5).
+            Drag each intervention to the level you think it represents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding:2rem 0 4rem">
+    <div class="container">
+
+      <!-- Controls -->
+      <div class="flex-between flex-wrap gap-2 mb-3">
+        <div style="font-size:0.9rem;color:var(--text-secondary)">
+          Drag all 5 interventions to a rung, then check your placements.
+        </div>
+        <div class="flex gap-1">
+          <button id="resetBtn" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem">↩ Reset</button>
+          <button id="checkBtn" class="btn btn-primary" disabled>Check Answers</button>
+        </div>
+      </div>
+
+      <!-- Workspace -->
+      <div class="longwe-workspace">
+
+        <!-- Ladder -->
+        <div>
+          <h3 style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-light);margin-bottom:0.75rem">
+            Longwe's Empowerment Ladder ↑ Level 5 at top
+          </h3>
+          <div id="ladderVisual" class="ladder-visual"></div>
+        </div>
+
+        <!-- Intervention cards -->
+        <div>
+          <h3 style="font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-light);margin-bottom:0.75rem">
+            Interventions to Place
+          </h3>
+          <div id="interventionCards" class="intervention-cards"></div>
+        </div>
+
+      </div>
+
+      <!-- Score Panel -->
+      <div id="scorePanel" class="card hidden mt-4" style="padding:1.5rem">
+        <div class="score-display">
+          <span class="score-number">0</span><span class="score-denom"> / 5</span>
+          <div class="score-label">interventions correctly placed</div>
+        </div>
+        <p class="score-message mt-2" style="color:var(--text-secondary);max-width:600px;margin-left:auto;margin-right:auto;text-align:center;font-style:italic"></p>
+        <div class="mt-3 flex-center gap-2 flex-wrap">
+          <button id="resetBtn2" class="btn btn-outline">↩ Try again</button>
+          <a href="resistance.html" class="btn btn-primary">Final Game: Hold the Room →</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gender Mainstreaming in Practice · Activity 5 of 6 · Independent Consulting Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="../js/games/longwe.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn2 = document.getElementById('resetBtn2');
+      if (btn2) btn2.addEventListener('click', () => document.getElementById('resetBtn').click());
+    });
+  </script>
+</body>
+</html>
