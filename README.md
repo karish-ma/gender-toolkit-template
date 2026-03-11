@@ -48,12 +48,12 @@ For each activity, open the corresponding JS file and replace the `DATA = { ... 
 
 | Task | File to edit |
 |---|---|
-| Task 1 — PGN vs SGI | `js/games/cardSort.js` |
-| Task 2 — Power Walk | `js/games/powerWalk.js` |
-| Task 3 — GRP Principles | `js/games/grpMatch.js` |
-| Task 4 — Forum Theater | `js/games/forumTheater.js` |
-| Task 5 — Longwe Framework | `js/games/longwe.js` |
-| Task 6 — Resistance | `js/games/resistance.js` |
+| Task 1:  PGN vs SGI | `js/games/cardSort.js` |
+| Task 2: Power Walk | `js/games/powerWalk.js` |
+| Task 3: GRP Principles | `js/games/grpMatch.js` |
+| Task 4: Forum Theater | `js/games/forumTheater.js` |
+| Task 5: Longwe Framework | `js/games/longwe.js` |
+| Task 6: Resistance | `js/games/resistance.js` |
 
 Each file has a comment at the top of the DATA block marking exactly what to replace.
 
